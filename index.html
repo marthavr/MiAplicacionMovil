@@ -1,0 +1,64 @@
+<!DOCTYPE html-->
+<html>
+
+<head>
+
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<style type="text/css">
+    p{
+        text-align: center;
+    }
+    
+</style>
+</head>
+<script type="text/javascript">
+    function mifuncion(){
+        alert("Ya termino la clase");
+    }
+</script>
+<body onload="mifuncion()">
+
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header">
+<p> Mi primera aplicacion</p>
+
+</div>
+
+<div data-role="content">
+<p>Contenido de la aplicaciòn</p>
+<!--<a href="#Pagina2" data-role="button"data-transition="slide">Pulsar</a>-->
+<!--<a href="#Pagina2" data-role="button"data-transition="slideup">Pulsar</a>-->
+<!--<a href="#Pagina2" data-role="button"data-transition="slidedown">Pulsar</a>-->
+<!--<a href="#Pagina2" data-role="button"data-transition="dialog">Pulsar</a>-->
+<!--<a href="#Pagina2" data-role="button"data-transition="flip">Pulsar</a>-->
+<!--<a href="#Pagina2" data-role="button"data-transition="fade">Pulsar</a>-->
+<a href="#Pagina2" data-role="button" data-transition="pop">Pulsar</a>
+<!--div></div-->
+</div>
+
+<div data-role="footer">
+<p>Pie de pagina</p>
+ </div>
+ </div>
+    <!--pagina2-->
+
+    <div data-role="page" id="Pagina2">
+    <div data-role="header">
+     <a href="#Principal"data-role="button" data-transition="flip" data-add-back-btn="true" data-icon="home">Regresar</a>
+           <p>Pagina 2</p>
+             </div>
+           
+            
+            <div data-role="content">
+                <p>Usted se encuentra en la pagina 2</p>
+            </div>
+            
+             <div data-role="footer">
+                 <p>Datos de contacto</p>
+   </div>
+ </div>
+</body>
+</html>
